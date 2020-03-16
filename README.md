@@ -20,13 +20,15 @@ In this example we have encapsulated constants and used them into ProductDetails
         const colors = array('black','gray','blue');
     
     }
-
+    
     class ProductDetails extends Product{
-
+     
+     // get the name of the product from Product class
         function getProductName(){
             echo "Product: ".Product::product_name."\n\n";
         }
-    
+        
+     // get the price of the product from Product class
         function getProductPrice(){
             echo "Product price :".Product::product_price."\n\n";
         }
@@ -39,7 +41,19 @@ In this example we have encapsulated constants and used them into ProductDetails
             }
         }
     }
- 
+    
+    $product = new ProductDetails;
+    $product->getProductName();
+    $product->getProductPrice();
+    $product->getProductColors();
+    
+  Output:-
+    
+    Product: smart phone
+
+    Product price :10000
+
+    available colors:black, gray, blue, 
    
 ##### Example-2.
 
@@ -89,5 +103,8 @@ Now, consider this example to check loan eligibility for better understanding of
      else{
          echo "Sorry ..! you are not eligible for loan.";
      }
-
+ 
+ Output:-
+ 
+    You are eligible for loan.!
 
