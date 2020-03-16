@@ -33,6 +33,7 @@ In this example we have encapsulated constants and used them into ProductDetails
             echo "Product price :".Product::product_price."\n\n";
         }
     
+    // get the color of the product from Product class
         function getProductColors(){
         
             echo "available colors:";
